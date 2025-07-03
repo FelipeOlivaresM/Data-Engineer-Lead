@@ -1,16 +1,18 @@
-# scripts/challenge_1_merge_csv.py
+# scripts/challenge_1 Merge CSV files and calculate total price
+# Felipe Olivares
+
 
 import pandas as pd
 import os
 
-# Cargar archivos CSV
+# Load CSV files
 products_path = os.path.join("data", "products.csv")
 orders_path = os.path.join("data", "orders.csv")
 
 products_df = pd.read_csv(products_path)
 orders_df = pd.read_csv(orders_path)
 
-# Unir los archivos por product_id
+# Join files by product_id
 
 merged_df = orders_df.merge(
     products_df,
@@ -20,13 +22,13 @@ merged_df = orders_df.merge(
     suffixes=('_order', '_product')
 )
 
-# Formatear fecha
+# Format date column
 merged_df["created_date"] = pd.to_datetime(merged_df["created_date"]).dt.date
 
-# Calcular el precio total por orden
+# Calculate price by order quantity
 merged_df["total_price"] = merged_df["quantity"] * merged_df["price"]
 
-# Renombrar y seleccionar columnas
+# Rename and select columns
 final_df = merged_df[[
     "created_date",
     "id_order",
@@ -39,8 +41,8 @@ final_df = merged_df[[
     "name": "product_name"
 })
 
-# Exportar archivo
+# Export datafram to CSV
 output_path = os.path.join("outputs", "order_full_information.csv")
 final_df.to_csv(output_path, index=False)
 
-print("✅ Archivo 'order_full_information.csv' generado correctamente.")
+#print("File 'order_full_information.csv' generated  successfully")
