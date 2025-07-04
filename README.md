@@ -38,31 +38,24 @@ Data-Engineer-Lead/
 
 Merge orders.csv and products.csv to generate order_full_information.csv with:
 
-order_created_date
-
-order_id
-
-product_name
-
-quantity
-
-total_price (calculated as price * quantity)
+  * order_created_date
+  * order_id
+  * product_name
+  * quantity
+  * total_price (calculated as price * quantity)
 
 🛠️ Tools:
 
-Python
-
-pandas
+  * Python
+  * pandas
 
 📃 Implementation:
 
-Load both CSVs
-
-Merge on product_id
-
-Calculate total price
-
-Format columns and export CSV
+  * Load both CSVs
+  * Merge on product_id
+  * Calculate total price
+    
+Format columns and export CSV ~> outputs/order_full_information.csv
 
 ✨ Improvements:
 
