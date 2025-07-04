@@ -2,6 +2,16 @@
 
 This repository contains the complete solution for the Lead Data Engineer technical assessment. It includes data processing, API integration, PostgreSQL loading, analytical queries, performance strategies, and architectural proposals.
 
+🚀 Project Setup
+
+# Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate  # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+-----------------------------------------------------------------------------------------------------------------------------------
 
 Data-Engineer-Lead/  
 │  
@@ -305,14 +315,6 @@ Value to Bussiness:
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-🚀 Project Setup
-
-# Create and activate virtual environment
-python -m venv venv
-venv\Scripts\activate  # On Windows
-
-# Install dependencies
-pip install -r requirements.txt
 
 📧 Author
 
