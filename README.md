@@ -13,6 +13,7 @@ pip install -r requirements.txt
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+# Structure
 Data-Engineer-Lead/  
 │  
 ├── data/                   # Original CSV files  
