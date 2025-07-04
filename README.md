@@ -3,30 +3,32 @@
 This repository contains the complete solution for the Lead Data Engineer technical assessment. It includes data processing, API integration, PostgreSQL loading, analytical queries, performance strategies, and architectural proposals.
 
 
-Data-Engineer-Lead/
-│
-├── data/                   # Original CSV files
-│   ├── orders.csv
-│   └── products.csv
-│
-├── outputs/                # Generated outputs
-│   ├── order_full_information.csv
-│   ├── fixed_order_full_information.csv
-│   └── kpi_product_orders.csv
-│
-├── scripts/                # Python and SQL scripts
-│   ├── challenge_1_merge_csv.py
-│   ├── challenge_2_currency_conversion.py
-│   ├── challenge_2_kpi_analysis.py
-│   ├── challenge_3_postgres_loader.py
-│   ├── challenge_3_create_indexes.sql
-│   ├── challenge_3_kpi_queries.sql
-│   └── challenge_4_proposal.md
-│
-├── .env                    # Environment variables (excluded from Git)
-├── .gitignore
-├── requirements.txt
-└── README.md               # This file
+Data-Engineer-Lead/  
+│  
+├── data/                   # Original CSV files  
+│   ├── orders.csv  
+│   └── products.csv  
+│  
+├── outputs/                # Generated outputs  
+│   ├── order_full_information.csv  
+│   ├── fixed_order_full_information.csv  
+│   └── kpi_product_orders.csv  
+│  
+├── scripts/                # Python and SQL scripts  
+│   ├── Challenge_1.py  
+│   ├── Challenge_2.py  
+│   ├── Challenge_2_2.py  
+│   ├── Challenge_3.py    
+│   ├── challenge_3_create_indexes.sql  
+│   ├── Challenge_3_KPIs_queries.sql  
+│   └── Test DF scripts.ipynb #Jupiter notebook for testing  
+│   └── Challenge_4_proposal.md
+
+│  
+├── .env                    # Environment variables (excluded from Git)  
+├── .gitignore  
+├── requirements.txt  
+└── README.md               # This file  
 
 
 
