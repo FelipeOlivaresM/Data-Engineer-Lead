@@ -46,3 +46,5 @@ output_path = os.path.join("outputs", "order_full_information.csv")
 final_df.to_csv(output_path, index=False)
 
 #print("File 'order_full_information.csv' generated  successfully")
+
+#print("File 'Juli')
